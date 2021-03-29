@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "remote_state" {
   # Never want to delete your state bucket
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   versioning {
